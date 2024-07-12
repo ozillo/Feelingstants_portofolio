@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <home>
       <div>
-        <h3>Feel the instants</h3>
+        <h3>Feel the MORE instants</h3>
       </div>
     </home>
   )
