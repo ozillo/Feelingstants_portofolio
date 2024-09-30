@@ -10,7 +10,9 @@ const App = () => {
   return (
     <>
     <Header/>
+    <main>
     <Home/>
+    </main>
     <Footer/>
     </>
   )

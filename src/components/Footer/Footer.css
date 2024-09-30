@@ -1,4 +1,6 @@
 footer{
     height: 10vh;
     background-color:#EFF5EA;
+    position: fixed;
+    gap:2rem;
 }

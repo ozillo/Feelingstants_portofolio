@@ -1,0 +1,59 @@
+li a {
+	min-width: 100cqw;
+	min-height: 100cqh;
+	max-width: 600px;
+	max-height: 600px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: 4px solid transparent;
+	border-radius: 12px;
+	position: relative;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform-origin: 100% 50%;
+	translate: calc((var(--active) * (var(--snap-size) + 1rem)) * -1) -50%;
+	width: calc((var(--active) * (100vw - (var(--snap-size) + 3rem))));
+	height: calc((var(--active) * (100vw - (var(--snap-size) + 3rem))));
+	aspect-ratio: 1;
+	z-index: calc(1 + (var(--active) * 999));
+}
+
+aside span {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+main img {
+	width: 100%;
+	max-width: 600px;
+	max-height: 90vh;
+	object-fit: cover;
+}
+
+.bear-link {
+	color: canvasText;
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	width: 48px;
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	opacity: 0.8;
+}
+
+:where(.x-link, .bear-link):is(:hover, :focus-visible) {
+	opacity: 1;
+}
+.bear-link svg {
+	width: 75%;
+}
