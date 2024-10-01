@@ -1,6 +1,7 @@
 import { BabelOptions } from "@vitejs/plugin-react";
 import React from "react";
-import React from 'react'
+
+
 
 const links = document.querySelectorAll('a') => {
     for (const link of links) {
@@ -482,6 +483,7 @@ const links = document.querySelectorAll('a') => {
   )
 }
 
-export default links
+export default links;
+
 
 
